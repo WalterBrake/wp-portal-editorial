@@ -1,3 +1,6 @@
+body{
+    padding-top: 190px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -65,11 +68,8 @@ ul li a:hover {
 }
 
 .espacio-bl .row {
-    margin-top: 100px;
+    margin-top: 10px;
 }
-
-
-
 
 
 /** stilos para comite-editorial.html*/
@@ -115,3 +115,141 @@ div.panel-default >div.panel-collapse >div.panel-body > p {
 .lista-con-espacio >li {
     margin-left: 4%;
 }
+
+.img-evento {
+    display: block;
+    max-width: 80%;
+    height: 300px;
+}
+
+#header-div {
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    padding-top: 0px;
+}
+
+
+
+@media (max-width: 780px) {
+    #header-img-logo{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:700;);
+.animation-book {
+  background-color: #045e78;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 8px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.animation-book * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.animation-book:after {
+  background-color: white;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  content: '';
+  left: -100%;
+  position: absolute;
+  width: 200px;
+  box-shadow: 0 0 100px white;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.animation-book >img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.animation-book >figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  line-height: 1em;
+  opacity: 0;
+}
+
+.animation-book h3 {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.animation-book h3 span {
+  font-weight: 700;
+}
+
+.animation-book a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.animation-book:hover > img,
+.animation-book.hover > img {
+  opacity: 0.4;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.animation-book:hover:after,
+.animation-book.hover:after {
+  left: 200%;
+}
+
+.animation-book:hover figcaption,
+.animation-book.hover figcaption {
+  opacity: 1;
+}
+
+
+
+
+
+

@@ -7,11 +7,13 @@
 
     <?php wp_head();?>
 </head>
-<body <?php body_class(); ?>>
+    <body <?php body_class(); ?>  >
+    
+    
 
-
-
-        <?php get_template_part("partes/menu"); ?>
+<div class="container-fluid"  id="header-div" >
+    
+     <?php get_template_part("partes/menu"); ?>
 
         <div class="container">
             <div title="Logo" class="row">
@@ -28,8 +30,11 @@
         
         
         <br>
-        <div class="container">
+        <div class="container-fluid">
                     <?php get_template_part("partes/menu_2"); ?>
 
         </div>
 
+
+</div>
+       
